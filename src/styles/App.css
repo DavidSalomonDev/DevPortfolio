@@ -1,0 +1,11 @@
+.App {
+  height: 100vh;
+  text-align: center;
+
+}
+
+.Sections-container{
+  height: 100vh;
+  margin: 5rem auto 0;
+  max-width: 110rem;
+}
