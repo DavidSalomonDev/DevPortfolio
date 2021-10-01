@@ -1,6 +1,7 @@
 import '../styles/App.css'
 import Navbar from './Navbar'
 import Header from './Header'
+import Description from './Description'
 
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<Navbar />
 			<main className='Sections-container'>
 				<Header />
+				<Description />
 			</main>
 		</div>
 	)

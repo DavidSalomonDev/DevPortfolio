@@ -7,6 +7,11 @@
 	width: 50%;
 }
 
+.Header-pic,
+.Header-description{
+	margin-top: -3rem;
+}
+
 .image-container {
 	align-items: flex-end;
 	background-color: #153466;
