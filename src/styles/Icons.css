@@ -1,0 +1,47 @@
+.iconContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e2e2e2;
+	padding: 1.5rem;
+	margin: 1rem;
+	border-radius: 50%;
+	height: 7rem;
+	width: 7rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+	z-index: 500;
+}
+
+.icon {
+	height: 6rem;
+	width: 6rem;
+}
+
+.iconHover {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	background-color: #111;
+	color: #e2e2e2;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	transition: all 0.3s ease-in;
+	z-index: -1000;
+	opacity: 0;
+}
+
+.iconHover::before {
+	content: '';
+	background-color: #111;
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	top: -0.5rem;
+	transform: rotate(-45deg);
+}
+
+.iconContainer:hover .iconHover {
+	transform: translateY(6rem);
+	opacity: 1;
+}

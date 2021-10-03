@@ -1,4 +1,5 @@
 import '../styles/Description.css'
+import Icons from './Icons'
 
 export default function Description() {
 	return (
@@ -17,9 +18,9 @@ export default function Description() {
 						As of right now, I'm an Applications Support Analyst, helping customers to use Google APIs for their services, AppsScript, SAML/SSO.
 					</p>
 			</div>
-			<div className='Description-tech'>
-				
-			</div>
+
+			<Icons />
+
 			</div>
 
 		</section>

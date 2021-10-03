@@ -1,4 +1,4 @@
-.Description{
+.Description {
 	display: flex;
 	margin-top: 10rem;
 	flex-direction: column;
@@ -7,15 +7,39 @@
 	justify-content: center;
 }
 
-.Description-title{
+.Description-title {
 	font-size: 4rem;
 	margin-bottom: 3rem;
 }
 
-.Description-info p{
+.Description-info {
+	width: 50%;
+}
+
+.Description-info p {
 	font-size: 2rem;
 }
 
-.Description-wrapper{
+.Description-tech {
 	display: flex;
+	width: 50%;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.Description-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@media only screen and (max-width: 60rem) {
+	.Description-info {
+		width: 100%;
+	}
+
+	.Description-tech {
+		width: 100%;
+	}
 }
