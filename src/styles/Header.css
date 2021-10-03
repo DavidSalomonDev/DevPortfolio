@@ -4,11 +4,12 @@
 }
 
 .Header-pic {
+	align-self: center;
 	width: 50%;
 }
 
 .Header-pic,
-.Header-description{
+.Header-description {
 	margin-top: -3rem;
 }
 
@@ -101,31 +102,29 @@ a img {
 		width: 30rem;
 	}
 
-	.image-container img{
+	.image-container img {
 		width: 40rem;
 	}
-
 
 	.Header-description {
 		width: 100%;
 		margin-top: -8rem;
 		text-align: center;
-		transform: scale(.8);
+		transform: scale(0.8);
 	}
-
 }
 
-@media only screen and (max-width: 30rem){
+@media only screen and (max-width: 30rem) {
 	.image-container {
 		height: 20rem;
 		width: 20rem;
 	}
 
-	.image-container img{
+	.image-container img {
 		width: 30rem;
 	}
 
 	.Header-description {
-		transform: scale(.6);
+		transform: scale(0.6);
 	}
 }

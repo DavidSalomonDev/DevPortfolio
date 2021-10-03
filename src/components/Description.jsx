@@ -18,7 +18,7 @@ export default function Description() {
 					</p>
 			</div>
 			<div className='Description-tech'>
-
+				
 			</div>
 			</div>
 
