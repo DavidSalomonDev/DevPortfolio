@@ -44,4 +44,5 @@
 .iconContainer:hover .iconHover {
 	transform: translateY(6rem);
 	opacity: 1;
+	z-index: 1000;
 }
