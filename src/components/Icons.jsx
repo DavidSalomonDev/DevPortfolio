@@ -1,6 +1,6 @@
 import '../styles/Icons.css'
 
-const iconsList = ['html', 'css', 'sass','js','reactjs', 'node', 'npm', 'git', 'firebase', 'chrome os']
+const iconsList = ['html', 'css', 'sass','js','reactjs', 'node', 'npm', 'git', 'firebase', 'chromeos']
 
 const iconsImages = iconsList.map((icon, idx) =>{
 	
