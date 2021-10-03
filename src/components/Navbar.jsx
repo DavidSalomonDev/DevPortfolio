@@ -5,7 +5,7 @@ export default function Navbar() {
 	return (
 		<nav className = 'Navbar'>
 				<div className = 'Navbar-contact'>
-					<div className='contact-Logo' onClick={()=>{window.open('https://davidsalomon.dev')}}>
+					<div className='contact-Logo' onClick={()=>{window.location.reload()}}>
 						<img src="/assets/signature.png" alt="David Salomón M." />
 					</div>
 					<div className = 'contact-Phone'>
