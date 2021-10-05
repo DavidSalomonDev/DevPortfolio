@@ -58,14 +58,14 @@
 	}
 }
 
-a {
+.Header a {
 	bottom: 6rem;
 	left: 50%;
 	margin: 0 auto;
 	position: absolute;
 }
 
-a img {
+.Header a img {
 	animation: arrowBlink 2s infinite;
 	height: 3rem;
 	width: 3rem;
