@@ -1,0 +1,94 @@
+.Contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 90vh;
+}
+
+.Contact h1 {
+	width: 100%;
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+.Contact .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Contact .card {
+	display: flex;
+	align-items: center;
+	max-width: 800px;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+		0 15px 40px rgba(0, 0, 0, 0.1);
+	display: flex;
+	padding: 3rem;
+	margin: 0 1.5rem;
+}
+
+.Contact .avatar {
+	border-radius: 50%;
+	border: 1rem solid #183b73;
+	height: 150px;
+	width: 150px;
+	transition: all 0.3s ease;
+}
+
+.Contact .avatar:hover {
+	border: 1rem solid #fff;
+	transform: scale(1.1);
+}
+
+.Contact .user-info h2 {
+	margin: 1rem;
+	font-size: 3rem;
+}
+
+#links {
+	margin: 0 5rem;
+	width: 40rem;
+}
+
+.Contact .link {
+	text-decoration: none;
+	color: #fff;
+	background-color: #183b73;
+	font-size: 2.5rem;
+	padding: 0.25rem 0.5rem;
+	margin: 1rem;
+	display: inline-block;
+	border-radius: 1rem;
+	transition: all 0.5s ease;
+}
+
+.Contact .link:hover {
+	transform: translateY(-2px) scale(1.4);
+	background-color: #fff;
+	color: #10274d;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+.Contact .link:active {
+	transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+	.Contact .card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.Contact .avatar {
+		margin-bottom: 1rem;
+	}
+
+	.Contact .user-info {
+		margin-bottom: 1rem;
+	}
+}

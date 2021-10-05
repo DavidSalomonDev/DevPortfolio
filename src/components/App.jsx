@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Header from './Header'
 import Description from './Description'
 import Projects from './Projects'
+import Contact from './Contact'
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Description />
 				<Projects />
 			</main>
+			<Contact />
 		</div>
 	)
 }
