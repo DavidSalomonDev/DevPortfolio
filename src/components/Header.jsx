@@ -29,7 +29,7 @@ export default function Header() {
 					I am <span ref = {textRef}></span>
 				</h3>
 			</div>
-			<a href = '#description'>
+			<a href = '#description' className='Arrow-Description'>
 				<img src = 'assets/down.png' alt = '' />
 			</a>
 		</header>

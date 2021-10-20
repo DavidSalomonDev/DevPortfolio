@@ -5,8 +5,8 @@ export default function Projects(){
 
 	const projectsArray = projectsList.map(project =>{
 		return (
-			<div className='Project-element'>
-				<div className='project' key={project.id}>
+			<div className='Project-element' key={project.id}>
+				<div className='project'>
 					<img src={project.preview} alt={project.name}/>
 					<div className='project-links'>
 						<a href={project.demo} target='_blank' rel='noreferrer'>Demo</a>
