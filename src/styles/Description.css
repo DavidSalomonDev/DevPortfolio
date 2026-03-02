@@ -1,45 +1,85 @@
 .Description {
 	display: flex;
-	margin-top: 10rem;
-	flex-direction: column;
 	align-items: center;
-	height: 90vh;
 	justify-content: center;
+	min-height: 100vh;
+	padding: 8rem 2rem;
+	background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+}
+
+.Description-container {
+	max-width: 120rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr;
+	gap: 6rem;
+	align-items: center;
+}
+
+.Description-subtitle {
+	color: var(--accent-primary);
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
 }
 
 .Description-title {
-	font-size: 4rem;
+	font-size: clamp(3rem, 5vw, 4.8rem);
+	line-height: 1.1;
 	margin-bottom: 3rem;
+	background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.Description-info {
-	width: 50%;
+.Description-text {
+	font-size: 1.8rem;
+	color: var(--text-secondary);
+	margin-bottom: 2rem;
 }
 
-.Description-info p {
+.Description-text strong {
+	color: var(--text-primary);
+	font-weight: 600;
+}
+
+.Education-card {
+	background: var(--glass);
+	backdrop-filter: blur(10px);
+	border: 1px solid var(--glass-border);
+	padding: 3rem;
+	border-radius: 2rem;
+	margin-bottom: 4rem;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.Education-card h3 {
 	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: var(--accent-secondary);
 }
 
-.Description-tech {
+.Education-card ul {
+	list-style: none;
+}
+
+.Education-card li {
+	font-size: 1.6rem;
+	color: var(--text-secondary);
+	margin-bottom: 1.5rem;
 	display: flex;
-	width: 50%;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 2rem;
+	align-items: center;
 }
 
-.Description-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-
-@media only screen and (max-width: 60rem) {
-	.Description-info {
-		width: 100%;
+@media (max-width: 900px) {
+	.Description-container {
+		grid-template-columns: 1fr;
+		gap: 4rem;
 	}
 
-	.Description-tech {
-		width: 100%;
+	.Description {
+		height: auto;
 	}
 }

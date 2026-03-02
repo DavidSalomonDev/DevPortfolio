@@ -1,27 +1,31 @@
 import '../styles/Icons.css'
 
-const iconsList = ['html', 'css', 'sass','js','reactjs', 'node', 'npm', 'git', 'firebase', 'chromeos']
+const cloudIcons = [
+	{ name: 'Azure', img: 'https://cdn.simpleicons.org/microsoftazure' },
+	{ name: 'Google Cloud', img: 'https://cdn.simpleicons.org/googlecloud' },
+	{ name: 'AWS', img: 'https://cdn.simpleicons.org/amazonservices' },
+	{ name: 'Oracle', img: 'https://cdn.simpleicons.org/oracle' },
+	{ name: 'IBM', img: 'https://cdn.simpleicons.org/ibm' },
+	{ name: 'Python', img: 'https://cdn.simpleicons.org/python' },
+	{ name: 'Docker', img: 'https://cdn.simpleicons.org/docker' },
+	{ name: 'Kubernetes', img: 'https://cdn.simpleicons.org/kubernetes' },
+	{ name: 'Terraform', img: 'https://cdn.simpleicons.org/terraform' },
+	{ name: 'React', img: 'https://cdn.simpleicons.org/react' },
+]
 
-const iconsImages = iconsList.map((icon, idx) =>{
-	
-	return (
-		<div key={idx}	className='iconContainer'>
-			<img 
-				src={`/assets/${icon}.png`} 
-				alt={`${icon}`}
-				className='icon' 	
-			/>
-			<div className='iconHover'>{icon}</div>
-		</div>
-		
-	)
-})
-
-
-export default function Icons(){
+export default function Icons() {
 	return (
 		<div className='Description-tech'>
-			{iconsImages}
+			{cloudIcons.map((icon, idx) => (
+				<div key={idx} className='iconContainer'>
+					<img
+						src={icon.img}
+						alt={icon.name}
+						className='icon'
+					/>
+					<div className='iconHover'>{icon.name}</div>
+				</div>
+			))}
 		</div>
-		)
+	)
 }

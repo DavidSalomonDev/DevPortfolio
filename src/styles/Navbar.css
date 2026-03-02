@@ -1,42 +1,73 @@
 .Navbar {
-	align-items: center;
-	background-color: #eee;
-
-	display: flex;
-	height: 7rem;
-	justify-content: space-around;
-	padding: 1rem 0;
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
-	z-index: 100000;
-}
-
-.Navbar-contact {
-	align-items: center;
+	height: 8rem;
+	background: var(--glass);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid var(--glass-border);
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.Navbar-contact > * {
 	align-items: center;
+	z-index: 10000;
+	transition: var(--transition);
+}
+
+.Navbar-content {
+	max-width: 140rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 4rem;
 	display: flex;
-	font-size: 1.4rem;
-	margin: 0 1.5rem;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.Navbar-contact .icon {
-	margin-right: 0.3rem;
-}
-
-.contact-Logo img {
+.Navbar-logo img {
+	height: 4rem;
 	cursor: pointer;
-	height: 5rem;
+	filter: invert(1);
+	opacity: 0.9;
+	transition: var(--transition);
 }
 
-@media only screen and (max-width: 40rem) {
-	.contact-Logo img {
-		height: 3rem;
+.Navbar-logo img:hover {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+.Navbar-links {
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	font-size: 1.4rem;
+	color: var(--text-secondary);
+	transition: var(--transition);
+	cursor: default;
+}
+
+.contact-item.github {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.contact-item.github:hover {
+	color: var(--accent-primary);
+}
+
+.contact-item .icon {
+	font-size: 2rem !important;
+	color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+	.Navbar-links {
+		display: none;
 	}
 }

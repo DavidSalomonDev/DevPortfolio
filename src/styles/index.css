@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--bg-primary: #0a0a0c;
+	--bg-secondary: #16161a;
+	--accent-primary: #3b82f6;
+	--accent-secondary: #06b6d4;
+	--text-primary: #f8fafc;
+	--text-secondary: #94a3b8;
+	--glass: rgba(22, 22, 26, 0.7);
+	--glass-border: rgba(255, 255, 255, 0.1);
+	--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-	color: #111;
-	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -17,7 +27,24 @@ html {
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	background-color: #EEE;
+	font-family: 'Outfit', sans-serif;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	line-height: 1.6;
+	overflow-x: hidden;
+}
 
+h1, h2, h3, h4 {
+	font-weight: 700;
+	color: var(--text-primary);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+input, button, textarea {
+	font-family: inherit;
 }

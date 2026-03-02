@@ -3,26 +3,31 @@ import Icons from './Icons'
 
 export default function Description() {
 	return (
-		<section className='Description' id = 'description'>
-			<h1 className='Description-title'>Who am I?</h1>
-			<div className='Description-wrapper'>
-				<div className='Description-info'>
-					<p>
-						I have worked as a Technical Support Representative for one of the largest internet brands since 2018, I gained
-						a lot of experience in technical matters with cloud products, I decided to start building my own ones.
+		<section className='Description' id='description'>
+			<div className='Description-container'>
+				<div className='Description-left'>
+					<h2 className='Description-subtitle'>Background</h2>
+					<h1 className='Description-title'>Elevating Cloud Infrastructure</h1>
+					<p className='Description-text'>
+						I am currently a <strong>Cloud Engineer at GBM</strong>, where I design, deploy, and support enterprise-grade cloud resources. While my primary focus is <strong>Microsoft Azure</strong>, I have extensive experience orchestrating solutions across <strong>Google Cloud, Oracle Cloud, AWS, and IBM Cloud</strong>.
 					</p>
-					<p>
-						In 2020, I took advantage of the lock-down and I reinforced my coding skills with Javascript and React.
+					<p className='Description-text'>
+						Education drives my technical depth. I hold a <strong>Master of Project Management</strong> and am currently completing my final year as a <strong>Software Development Engineer at UES</strong>.
 					</p>
-					<p>
-						As of right now, I'm an Applications Support Analyst, helping customers to use Google APIs for their services, AppsScript, SAML/SSO.
-					</p>
+				</div>
+				<div className='Description-right'>
+					<div className='Education-card'>
+						<h3>Education & Focus</h3>
+						<ul>
+							<li>🎓 Master of Project Management (Completed)</li>
+							<li>💻 Software Dev Engineer @ UES (Final Year)</li>
+							<li>🚀 Focus: Cloud Services & Data Engineering</li>
+							<li>🤖 AI & Automation Specialist</li>
+						</ul>
+					</div>
+					<Icons />
+				</div>
 			</div>
-
-			<Icons />
-
-			</div>
-
 		</section>
 	)
 }

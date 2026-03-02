@@ -1,29 +1,28 @@
 import '../styles/Navbar.css'
-import {Person, Mail} from '@material-ui/icons'
+import { Person, Mail, GitHub } from '@material-ui/icons'
 
 export default function Navbar() {
 	return (
-		<nav className = 'Navbar'>
-				<div className = 'Navbar-contact'>
-					<div className='contact-Logo' onClick={()=>{window.location.reload()}}>
-						<img src="/assets/signature.png" alt="David Salomón M." />
-					</div>
-					<div className = 'contact-Phone'>
-						<Person className = 'icon' />
+		<nav className='Navbar'>
+			<div className='Navbar-content'>
+				<div className='Navbar-logo' onClick={() => { window.location.reload() }}>
+					<img src="/assets/signature.png" alt="David Salomón" />
+				</div>
+				<div className='Navbar-links'>
+					<div className='contact-item'>
+						<Person className='icon' />
 						<span>+503 7036 8794</span>
 					</div>
-					<div className = 'contact-Email'>
-						<Mail className = 'icon' />
+					<div className='contact-item'>
+						<Mail className='icon' />
 						<span>me@davidsalomon.dev</span>
 					</div>
+					<a href="https://github.com/davidsalomondev" target="_blank" rel="noreferrer" className='contact-item github'>
+						<GitHub className='icon' />
+						<span>davidsalomondev</span>
+					</a>
 				</div>
-				<div className = 'right'>
-					<div className = 'hamburger'>
-						<span className = 'line1'></span>
-						<span className = 'line2'></span>
-						<span className = 'line3'></span>
-					</div>
-				</div>
+			</div>
 		</nav>
 	)
 }

@@ -11,7 +11,13 @@ export default function Header() {
 			showCursor: true,
 			backDelay: 1500,
 			backSpeed: 60,
-			strings: ['a Frontend Developer', 'a React Developer', 'an Apps Support Analyst']
+			strings: [
+				'a Cloud Engineer @ GBM', 
+				'an Azure Specialist', 
+				'an Automation Enthusiast', 
+				'a Data Engineer',
+				'a Project Manager'
+			]
 		})
 	}, [])
 
